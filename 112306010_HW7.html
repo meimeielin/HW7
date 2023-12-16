@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<style>
+
+		h1 {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 50px;
+        }
+
+    	</style>
+
+    </head>
+    	
+    <body style="background-color: lightyellow;">
+		<h1 align = center style="background-color: lightskyblue;"><I>Awesome!</I></h1>
+
+
+
+		<script>
+			var rand = Math.floor((Math.random()*10) + 1);
+			var num = -1;
+			var minValue = 1;
+			var maxValue = 10;
+
+			while(num != rand){
+
+				num = parseInt(window.prompt("Enter a number between " + minValue + "~" + maxValue));
+				
+				if (num > rand) {
+					maxValue = num;
+				}
+				else {
+					minValue = num;
+				}
+
+			}
+
+			alert("You did it!");
+
+		</script>
+
+
+	</body>
+</html>
